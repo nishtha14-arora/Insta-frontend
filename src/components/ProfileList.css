@@ -1,0 +1,40 @@
+.profile-list {
+  /* margin-top: 20px; */
+}
+.view-name {
+  font-weight: bold;
+  text-align: center;
+}
+.user {
+  display: flex;
+  height: 100px;
+  /* background-color: burlywood; */
+  background: #dae0e5;
+  margin: 15px;
+  border-radius: 38px;
+  width: 170px;
+}
+.user-image {
+  height: 100%;
+  width: 80px;
+}
+.user-image img {
+  height: 100%;
+  width: 100%;
+
+  object-fit: fill;
+  border-radius: 100px;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Averia Serif Libre", cursive;
+  font-family: "Karla", sans-serif;
+  font-family: "New Tegomin", serif;
+  margin-left: 5px;
+}
+.user-name {
+}
+.user-handle {
+}
