@@ -18,7 +18,7 @@ class Settings extends Component{
 
 
     async componentDidMount(){
-        let userObj=await axios.get("http://localhost:3000/user/714068e1-423c-4d35-83b9-8f7a95313820/");
+        let userObj=await axios.get("https://instagram-backend-api.herokuapp.com/user/714068e1-423c-4d35-83b9-8f7a95313820/");
         let user=userObj.data.data;
         let {name,handle,bio,phone,email,pImage,is_public}=user;
         this.setState({
@@ -73,7 +73,7 @@ class Settings extends Component{
         formData.append("handle",this.state.handle);
         formData.append("bio",this.state.bio);
         console.log(formData);
-        let patchData=await axios.patch("http://localhost:3000/user/714068e1-423c-4d35-83b9-8f7a95313820/",formData);
+        let patchData=await axios.patch("https://instagram-backend-api.herokuapp.com/user/714068e1-423c-4d35-83b9-8f7a95313820/",formData);
         console.log(patchData); 
         this.componentDidMount();
         

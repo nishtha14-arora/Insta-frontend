@@ -29,7 +29,7 @@ class ProfileView extends Component{
 
         }else if(view ==="REQUESTS" &&this.state.currentView!=="REQUESTS")
         {
-            let requestObj=await axios.get("http://localhost:3000/user/pending/714068e1-423c-4d35-83b9-8f7a95313820/")
+            let requestObj=await axios.get("https://instagram-backend-api.herokuapp.com/user/pending/714068e1-423c-4d35-83b9-8f7a95313820/")
         // console.log(requestObj);
             let pendingRequest=requestObj.data.data;
             console.log(pendingRequest);

@@ -15,7 +15,7 @@ class CreatePost extends Component{
         formData.append('postImage',uploadedImage);
         formData.append('uid',"714068e1-423c-4d35-83b9-8f7a95313820");
         formData.append('caption',caption);
-        let createPostData=await axios.post("http://localhost:3000/post",formData);
+        let createPostData=await axios.post("https://instagram-backend-api.herokuapp.com/",formData);
         console.log(createPostData);
         // to see the update post in ui
         this.props.updatePosts();

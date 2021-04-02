@@ -50,7 +50,7 @@ class FeedsView extends Component{
         // backend => axios.get();
         console.log("hello");
 
-        let postData=await axios.get("http://localhost:3000/post")
+        let postData=await axios.get("https://instagram-backend-api.herokuapp.com/post")
         // console.log(postData);
         let posts=postData.data.body;
         // console.log(posts);
@@ -63,7 +63,7 @@ class FeedsView extends Component{
         // console.log(userData);
         for(let i=0;i<uids.length;i++)
         {
-            let userData=await axios.get(`http://localhost:3000/user/${uids[i]}`)
+            let userData=await axios.get(`https://instagram-backend-api.herokuapp.com/${uids[i]}`)
             users.push(userData.data.data);
 
         }
